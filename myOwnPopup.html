@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myOwnModal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut, rerum facere molestias architecto
+            neque quae consequatur distinctio culpa pariatur expedita voluptatem delectus minus autem quisquam, nam
+            dolore, quasi harum.</div>
+        <button class="buyNowBtn">Buy now!</button>
+        <div><img src="image640.jpg" alt="Lady and sunflowers"></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sunt fugit, quibusdam sapiente dolorem
+            iusto dicta tempora provident, necessitatibus omnis doloremque? Praesentium minima quam beatae distinctio
+            ratione maxime magni suscipit.</div>
+    </section>
+    <section class="modal-wrap">
+        <div class="modal">
+            <div class="modal-top"></div>
+            <div class="modal-middle">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus cumque possimus corrupti
+                    molestiae odio laboriosam, totam provident? Qui beatae rerum nostrum excepturi fugit labore
+                    consequatur sunt optio similique, voluptatibus laboriosam?</p>
+                <button>buy like this instant</button><button class="close">close</button>
+            </div>
+            <div class="modal-bottom"></div>
+        </div>
+    </section>
+    <script>
+        const btns = document.querySelectorAll(".buyNowBtn, .close");
+        btns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                document.querySelector(".modal-wrap").classList.toggle("active");
+            })
+        });
+    </script>
+</body>
+
+</html>

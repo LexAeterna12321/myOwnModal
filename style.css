@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section:first-child {
+    height: 150vh;
+    width: 80%;
+    margin: 5vh auto;
+    text-align: justify;
+    text-align-last: center;
+}
+
+section div img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+section .buyNowBtn {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid royalblue;
+    cursor: pointer;
+}
+
+.modal-wrap {
+    opacity:0;
+    transition: .4s;
+}
+
+.modal-wrap.active {
+    opacity:1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 2px #000;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.modal .modal-top,
+.modal .modal-bottom {
+    flex-basis: 12%;
+    background-color: #000;
+    width: 100%;
+}
+
+.modal .modal-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.modal .modal-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.modal .modal-middle {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.modal-middle button {
+    padding: 15px 40px;
+    color: royalblue;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
