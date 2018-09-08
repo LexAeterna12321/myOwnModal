@@ -37,6 +37,7 @@
         btns.forEach((btn) => {
             btn.addEventListener("click", () => {
                 document.querySelector(".modal-wrap").classList.toggle("active");
+                document.querySelector("section:first-child").classList.toggle("active");
             })
         });
     </script>

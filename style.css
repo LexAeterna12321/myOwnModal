@@ -1,3 +1,7 @@
+:root{
+    --trsTime: .4s;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +14,16 @@ section:first-child {
     margin: 5vh auto;
     text-align: justify;
     text-align-last: center;
+    transition: var(--trsTime);
 }
 
 section div img {
     width: 100%;
     margin: 20px 0;
+}
+
+section:first-child.active{
+    filter: blur(2px);
 }
 
 section .buyNowBtn {
@@ -29,7 +38,7 @@ section .buyNowBtn {
 
 .modal-wrap {
     opacity:0;
-    transition: .4s;
+    transition: var(--trsTime);
 }
 
 .modal-wrap.active {
